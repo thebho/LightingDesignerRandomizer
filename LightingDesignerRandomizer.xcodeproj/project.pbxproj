@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		C8B5BFA81AD59ACA0054E786 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BFA71AD59ACA0054E786 /* AppDelegate.swift */; };
 		C8B5BFAB1AD59ACA0054E786 /* LightingDesignerRandomizer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BFA91AD59ACA0054E786 /* LightingDesignerRandomizer.xcdatamodeld */; };
-		C8B5BFAD1AD59ACA0054E786 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BFAC1AD59ACA0054E786 /* ViewController.swift */; };
-		C8B5BFB01AD59ACA0054E786 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8B5BFAE1AD59ACA0054E786 /* Main.storyboard */; };
 		C8B5BFB21AD59ACA0054E786 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B5BFB11AD59ACA0054E786 /* Images.xcassets */; };
 		C8B5BFB51AD59ACA0054E786 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8B5BFB31AD59ACA0054E786 /* LaunchScreen.xib */; };
 		C8B5BFC11AD59ACA0054E786 /* LightingDesignerRandomizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BFC01AD59ACA0054E786 /* LightingDesignerRandomizerTests.swift */; };
+		C8B5BFCB1AD59AE00054E786 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8B5BFCA1AD59AE00054E786 /* Main.storyboard */; };
+		C8B5BFCF1AD59AF60054E786 /* DiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BFCC1AD59AF60054E786 /* DiceViewController.swift */; };
+		C8B5BFD01AD59AF60054E786 /* EffectListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BFCD1AD59AF60054E786 /* EffectListTableViewController.swift */; };
+		C8B5BFD11AD59AF60054E786 /* DieListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BFCE1AD59AF60054E786 /* DieListTableViewController.swift */; };
+		C8B5BFD31AD5A1320054E786 /* LightingDesignerRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B5BFD21AD5A1320054E786 /* LightingDesignerRandomizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +34,16 @@
 		C8B5BFA61AD59ACA0054E786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8B5BFA71AD59ACA0054E786 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8B5BFAA1AD59ACA0054E786 /* LightingDesignerRandomizer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LightingDesignerRandomizer.xcdatamodel; sourceTree = "<group>"; };
-		C8B5BFAC1AD59ACA0054E786 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C8B5BFAF1AD59ACA0054E786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8B5BFB11AD59ACA0054E786 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C8B5BFB41AD59ACA0054E786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C8B5BFBA1AD59ACA0054E786 /* LightingDesignerRandomizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightingDesignerRandomizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8B5BFBF1AD59ACA0054E786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8B5BFC01AD59ACA0054E786 /* LightingDesignerRandomizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightingDesignerRandomizerTests.swift; sourceTree = "<group>"; };
+		C8B5BFCA1AD59AE00054E786 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C8B5BFCC1AD59AF60054E786 /* DiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceViewController.swift; sourceTree = "<group>"; };
+		C8B5BFCD1AD59AF60054E786 /* EffectListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectListTableViewController.swift; sourceTree = "<group>"; };
+		C8B5BFCE1AD59AF60054E786 /* DieListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DieListTableViewController.swift; sourceTree = "<group>"; };
+		C8B5BFD21AD5A1320054E786 /* LightingDesignerRandomizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightingDesignerRandomizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +85,15 @@
 		C8B5BFA41AD59ACA0054E786 /* LightingDesignerRandomizer */ = {
 			isa = PBXGroup;
 			children = (
+				C8B5BFA91AD59ACA0054E786 /* LightingDesignerRandomizer.xcdatamodeld */,
+				C8B5BFD21AD5A1320054E786 /* LightingDesignerRandomizer.swift */,
+				C8B5BFCC1AD59AF60054E786 /* DiceViewController.swift */,
+				C8B5BFCD1AD59AF60054E786 /* EffectListTableViewController.swift */,
+				C8B5BFCE1AD59AF60054E786 /* DieListTableViewController.swift */,
+				C8B5BFCA1AD59AE00054E786 /* Main.storyboard */,
 				C8B5BFA71AD59ACA0054E786 /* AppDelegate.swift */,
-				C8B5BFAC1AD59ACA0054E786 /* ViewController.swift */,
-				C8B5BFAE1AD59ACA0054E786 /* Main.storyboard */,
 				C8B5BFB11AD59ACA0054E786 /* Images.xcassets */,
 				C8B5BFB31AD59ACA0054E786 /* LaunchScreen.xib */,
-				C8B5BFA91AD59ACA0054E786 /* LightingDesignerRandomizer.xcdatamodeld */,
 				C8B5BFA51AD59ACA0054E786 /* Supporting Files */,
 			);
 			path = LightingDesignerRandomizer;
@@ -195,9 +204,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8B5BFB01AD59ACA0054E786 /* Main.storyboard in Resources */,
 				C8B5BFB51AD59ACA0054E786 /* LaunchScreen.xib in Resources */,
 				C8B5BFB21AD59ACA0054E786 /* Images.xcassets in Resources */,
+				C8B5BFCB1AD59AE00054E786 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,9 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8B5BFAD1AD59ACA0054E786 /* ViewController.swift in Sources */,
+				C8B5BFD11AD59AF60054E786 /* DieListTableViewController.swift in Sources */,
+				C8B5BFD01AD59AF60054E786 /* EffectListTableViewController.swift in Sources */,
 				C8B5BFA81AD59ACA0054E786 /* AppDelegate.swift in Sources */,
+				C8B5BFD31AD5A1320054E786 /* LightingDesignerRandomizer.swift in Sources */,
 				C8B5BFAB1AD59ACA0054E786 /* LightingDesignerRandomizer.xcdatamodeld in Sources */,
+				C8B5BFCF1AD59AF60054E786 /* DiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,14 +252,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C8B5BFAE1AD59ACA0054E786 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C8B5BFAF1AD59ACA0054E786 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C8B5BFB31AD59ACA0054E786 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -341,6 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LightingDesignerRandomizer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -351,6 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LightingDesignerRandomizer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -409,6 +415,7 @@
 				C8B5BFC61AD59ACA0054E786 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8B5BFC71AD59ACA0054E786 /* Build configuration list for PBXNativeTarget "LightingDesignerRandomizerTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +424,7 @@
 				C8B5BFC91AD59ACA0054E786 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

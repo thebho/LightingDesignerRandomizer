@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="13F1066" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="EffectList" representedClassName="LightingDesignerRandomizer.EffectList" syncable="YES">
+        <attribute name="active" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="listName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="effects" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EffectName" inverseName="effectList" inverseEntity="EffectName" syncable="YES"/>
+    </entity>
+    <entity name="EffectName" representedClassName="LightingDesignerRandomizer.EffectName" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="effectList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EffectList" inverseName="effects" inverseEntity="EffectList" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="EffectList" positionX="-54" positionY="-9" width="128" height="90"/>
+        <element name="EffectName" positionX="-63" positionY="-18" width="128" height="73"/>
+    </elements>
 </model>
