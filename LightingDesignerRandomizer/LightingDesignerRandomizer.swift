@@ -69,11 +69,9 @@ struct NewListBuilder {
         } else {
             println("Requst Failed")
         }
-
-        println("Called new list")
         
-        let defaultList = EffectList.createNewEffectList(moc, listName: "Default")
-        let defaults = ["Rainbow Effect", "Slutty Effect", "Milk The Cow", "Add LED Birdie", "Bally Hoo", "PiAnk!"]
+        let defaultList = EffectList.createNewEffectList(moc, listName: "Programming Languages")
+        let defaults = ["Swift","Java","Python","C+","Objective-C","C"]
         
         for def in defaults {
             EffectName.createNewEffectName(moc, name: def, list: defaultList)

@@ -25,8 +25,14 @@ class EffectListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Fetches all lists in the database
         pullAllLists()
+        
+        // Prevents user from segueing backwards without picking an effect list
         self.navigationItem.hidesBackButton = true
+        
+        self.navigationItem.title = "Select Die"
 
     }
     
@@ -53,14 +59,10 @@ class EffectListTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
         return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
         return (theatersArray.count + 1)
     }
 
@@ -85,16 +87,13 @@ class EffectListTableViewController: UITableViewController {
         }
     }
     
-
-    
-    
+    // Adds action sheet to name new list, and segues to new blank list page
     @IBAction func addList(sender: UIButton) {
         var newListName = ""
         let actionSheetController: UIAlertController = UIAlertController(title: "New Die", message: "Name your new Die", preferredStyle: .Alert)
         
         //Create and add the Cancel action
         let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .Cancel) { action -> Void in
-            //Do some stuff
         }
         actionSheetController.addAction(cancelAction)
         //Create and an option action
@@ -115,10 +114,12 @@ class EffectListTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "dieList"{
             let navVC = segue.destinationViewController as! DieListTableViewController
-            navVC.effectsList = theatersArray[sender!.tag]
+            navVC.elementList = theatersArray[sender!.tag]
             navVC.managedObjectContext = managedObjectContext!
     
         }else if segue.identifier == "changeDie"{
+            
+            // Returns to to main view controller and changes active list to selected list
             NewListBuilder().activateList(managedObjectContext!, listToActivate: theatersArray[sender!.tag])
         }
     }

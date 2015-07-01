@@ -19,7 +19,9 @@ class TestView: UIView {
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+    
     override func drawRect(rect: CGRect) {
+        // Creates the die rectangle based on the given rect attribute
         let h = rect.height
         let w = rect.width
         var color:UIColor = UIColor.yellowColor()
@@ -42,13 +44,18 @@ extension Array {
     }
 }
 class DiceViewController: UIViewController {
-
+    
+    // initiates die
     let die = TestView(frame: CGRectMake(100, 100, 300, 300))
+    
+    // fetches managedObjectContext from AppDelegate
     let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+    
+    // initiates die element label
     @IBOutlet weak var effectName: UILabel!
     var effectList: EffectList?
     var effectsArray = [EffectName]()
-    var colorOptions = [UIColor.redColor(), UIColor.blueColor(), UIColor.greenColor(), UIColor.orangeColor(), UIColor.yellowColor(), UIColor.cyanColor()]
+    var colorOptions = [UIColor.whiteColor(), UIColor.greenColor(), UIColor.magentaColor(), UIColor.cyanColor()]
     var timer: NSTimer?
     var timerCount = 0
     
@@ -58,7 +65,8 @@ class DiceViewController: UIViewController {
         effectList = NewListBuilder().pullActive(managedObjectContext!)
         loadEffects()
         self.navigationItem.title = effectList!.listName
-
+        var navAppearance = UINavigationBar.appearance()
+        navAppearance.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.lightGrayColor()]
 //        view.addSubview(die)
 
     }
@@ -92,7 +100,6 @@ class DiceViewController: UIViewController {
     }
     
     func animateDice () {
-//        println("Animating dice \(timerCount)")
         timerCount += 1
         effectName.text = effectsArray.randomItem().name
         effectName.textColor = colorOptions.randomItem()
@@ -101,14 +108,17 @@ class DiceViewController: UIViewController {
         }
     }
     
+    // When phone has stopped shaking, begins rollDice sequence
     override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent) {
         rollDice()
     }
     
+    // Allows shake gesture recognizer
     override func canBecomeFirstResponder() -> Bool {
         return true
     }
     
+    // Segues to TableViewController with list of dice
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "changeList"{
             let navVC = segue.destinationViewController as! EffectListTableViewController

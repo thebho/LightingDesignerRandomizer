@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="w9M-YB-fJ7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="w9M-YB-fJ7">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -15,12 +15,11 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="CfJ-hE-kdS">
-                                <rect key="frame" x="16" y="-12" width="568" height="568"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="16" y="20" width="568" height="568"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="CfJ-hE-kdS" secondAttribute="height" multiplier="1:1" id="kQ7-NK-EXa"/>
                                 </constraints>
@@ -29,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.45553953670000003" green="0.2522966096" blue="0.49986049110000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0096490973276437478" green="0.27050241712707179" blue="0.2608088811672879" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="CfJ-hE-kdS" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Gq7-hy-ufG"/>
                             <constraint firstAttribute="centerY" secondItem="CfJ-hE-kdS" secondAttribute="centerY" constant="1.25" id="aPM-0X-WBp"/>
@@ -46,7 +45,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="Yde-wa-hEt">
                         <barButtonItem key="rightBarButtonItem" title="Die" id="fhq-t2-l0y">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="Kje-ai-XZW" kind="show" identifier="changeList" id="PNn-Fj-5om"/>
                             </connections>
@@ -65,9 +63,9 @@
             <objects>
                 <tableViewController id="Kje-ai-XZW" customClass="EffectListTableViewController" customModule="LightingDesignerRandomizer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="53" sectionHeaderHeight="22" sectionFooterHeight="22" id="vRR-zx-gkW">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0096490973279999993" green="0.2705024171" blue="0.26080888120000001" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="chooseCell" rowHeight="53" id="LTk-3P-94Q" customClass="DieNameCell" customModule="LightingDesignerRandomizer" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -75,15 +73,16 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marriott Theatre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGw-qm-0uA">
-                                            <rect key="frame" x="8" y="16" width="520" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <rect key="frame" x="8" y="15" width="523" height="23"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <color key="textColor" red="0.8538919921" green="0.87550951089999995" blue="0.87550951089999995" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cqf-Mt-fOP">
-                                            <rect key="frame" x="536" y="12" width="56" height="30"/>
+                                            <rect key="frame" x="539" y="12.5" width="53" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <state key="normal" title="Edit List">
-                                                <color key="titleColor" red="0.88190691980000002" green="0.99520865039999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleColor" red="0.8538919921" green="0.87550951089999995" blue="0.87550951089999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
@@ -100,28 +99,29 @@
                                         <constraint firstItem="Cqf-Mt-fOP" firstAttribute="leading" secondItem="dGw-qm-0uA" secondAttribute="trailing" constant="8" id="mH1-6Q-Nzm"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0096490973279999993" green="0.2705024171" blue="0.26080888120000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dieName" destination="dGw-qm-0uA" id="2RZ-b7-Coz"/>
                                     <outlet property="editListOutlet" destination="Cqf-Mt-fOP" id="n0v-Ou-ijy"/>
                                     <segue destination="mOO-jX-fdD" kind="unwind" identifier="changeDie" unwindAction="unwindToThisViewController:" id="ywO-PJ-Fzu"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="addCell" rowHeight="53" id="wmf-Ih-dzv">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="addCell" rowHeight="34" id="wmf-Ih-dzv">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wmf-Ih-dzv" id="JzG-bH-WF9">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebB-gb-bY9">
-                                            <rect key="frame" x="8" y="16" width="116.5" height="20.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebB-gb-bY9">
+                                            <rect key="frame" x="8" y="17" width="0.0" height="0.0"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZj-d7-PGC">
-                                            <rect key="frame" x="250" y="12" width="101" height="30"/>
+                                            <rect key="frame" x="262.5" y="4.5" width="76" height="26"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <state key="normal" title="Add Effect List">
-                                                <color key="titleColor" red="0.88190691980000002" green="0.99520865039999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleColor" red="0.8538919921" green="0.87550951089999995" blue="0.87550951089999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
@@ -136,7 +136,7 @@
                                         <constraint firstAttribute="centerY" secondItem="ebB-gb-bY9" secondAttribute="centerY" constant="-0.25" id="znC-F5-hdR"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0096490973279999993" green="0.2705024171" blue="0.26080888120000001" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -158,9 +158,9 @@
             <objects>
                 <tableViewController id="Mmn-6Y-zaM" customClass="DieListTableViewController" customModule="LightingDesignerRandomizer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="lou-va-0AI">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0096490973279999993" green="0.2705024171" blue="0.26080888120000001" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="effect" id="bfJ-sv-l1g" customClass="DieTableViewCell" customModule="LightingDesignerRandomizer" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -168,19 +168,20 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Effect Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPd-AU-ret">
-                                            <rect key="frame" x="8" y="11" width="584" height="21"/>
+                                            <rect key="frame" x="18" y="11.5" width="574" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.8538919921" green="0.87550951089999995" blue="0.87550951089999995" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.0096490973279999993" green="0.2705024171" blue="0.26080888120000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="nPd-AU-ret" firstAttribute="trailing" secondItem="h0g-pR-RXa" secondAttribute="trailingMargin" id="1Bc-yg-oQg"/>
-                                        <constraint firstItem="nPd-AU-ret" firstAttribute="leading" secondItem="h0g-pR-RXa" secondAttribute="leadingMargin" id="7TB-N1-Bxk"/>
+                                        <constraint firstItem="nPd-AU-ret" firstAttribute="leading" secondItem="h0g-pR-RXa" secondAttribute="leadingMargin" constant="10" id="7TB-N1-Bxk"/>
                                         <constraint firstAttribute="centerY" secondItem="nPd-AU-ret" secondAttribute="centerY" constant="0.25" id="ine-Gs-9q5"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0096490973279999993" green="0.2705024171" blue="0.26080888120000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="effectName" destination="nPd-AU-ret" id="jcf-jF-uzu"/>
                                 </connections>
@@ -210,6 +211,7 @@
                                             </connections>
                                         </button>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.0096490973279999993" green="0.2705024171" blue="0.26080888120000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="centerY" secondItem="6Tb-fX-tAL" secondAttribute="centerY" id="HC8-fy-IEh"/>
                                         <constraint firstItem="6Tb-fX-tAL" firstAttribute="leading" secondItem="Cwb-H8-yGc" secondAttribute="leadingMargin" id="Q7a-Zn-T5z"/>
@@ -218,7 +220,7 @@
                                         <constraint firstItem="H7V-am-sHr" firstAttribute="trailing" secondItem="Cwb-H8-yGc" secondAttribute="trailingMargin" id="sp5-bh-xJ5"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0096490973279999993" green="0.2705024171" blue="0.26080888120000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="addNewEffect" destination="H7V-am-sHr" id="7Ez-GC-gEh"/>
                                     <outlet property="newEffectTextField" destination="6Tb-fX-tAL" id="End-4a-71t"/>
@@ -236,7 +238,9 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CsY-Pc-iBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationItem id="X1w-e2-YcT">
-                    <barButtonItem key="rightBarButtonItem" title="Add" id="qcO-yE-E7G"/>
+                    <barButtonItem key="rightBarButtonItem" title="Add" id="qcO-yE-E7G">
+                        <color key="tintColor" red="0.88190691980000002" green="0.99520865039999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </barButtonItem>
                 </navigationItem>
             </objects>
             <point key="canvasLocation" x="2503" y="1068"/>
@@ -246,10 +250,13 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w9M-YB-fJ7" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="yGV-2y-NW9">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yGV-2y-NW9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.8538919921" green="0.87550951089999995" blue="0.87550951089999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -261,4 +268,5 @@
             <point key="canvasLocation" x="424" y="1068"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.8538919921" green="0.87550951089999995" blue="0.87550951089999995" alpha="1" colorSpace="calibratedRGB"/>
 </document>
