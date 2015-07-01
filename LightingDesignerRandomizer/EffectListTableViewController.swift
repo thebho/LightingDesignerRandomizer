@@ -56,6 +56,11 @@ class EffectListTableViewController: UITableViewController {
     @IBAction func editListAction(sender: UIButton) {
         activeListName = theatersArray[sender.tag]
     }
+    
+    // Hides iPhone status
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {

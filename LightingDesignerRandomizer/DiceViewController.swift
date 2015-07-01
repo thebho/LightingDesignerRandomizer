@@ -70,14 +70,19 @@ class DiceViewController: UIViewController {
 //        view.addSubview(die)
 
     }
+    
+    
     @IBAction func unwindToThisViewController(segue: UIStoryboardSegue) {
         effectList = NewListBuilder().pullActive(managedObjectContext!)
         loadEffects()
         self.navigationItem.title = effectList!.listName
         effectName.text = "Shake"
         effectName.textColor = UIColor.whiteColor()
-
-        
+    }
+    
+    // Hides iPhone status
+    override func prefersStatusBarHidden() -> Bool {
+        return true
     }
     
     func buildOriginal () {

@@ -52,6 +52,11 @@ class DieListTableViewController: UITableViewController {
         self.tableView.reloadData()
     }
     
+    // Hides iPhone status
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
